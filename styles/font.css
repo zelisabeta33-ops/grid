@@ -1,0 +1,12 @@
+@font-face {
+    font-family: probold;
+    src: url(../fonts/ProximaNova-Bold.woff);
+}
+@font-face {
+    font-family: prolight;
+    src: url(../fonts/ProximaNova-Light.woff);
+}
+@font-face {
+    font-family: prosemi;
+    src: url(../fonts/ProximaNova-Semibold.woff);
+}

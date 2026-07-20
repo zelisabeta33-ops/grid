@@ -1,0 +1,15 @@
+@import url(./styles/head.css);
+@import url(./styles/font.css);
+
+
+.container-fluid{
+    width: 100%;
+}
+.container{
+    width: 1500px;
+    padding: 0;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
