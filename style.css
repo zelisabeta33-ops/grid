@@ -1,6 +1,6 @@
 @import url(./styles/head.css);
 @import url(./styles/font.css);
-
+@import url(./styles/main.css);
 
 .container-fluid{
     width: 100%;

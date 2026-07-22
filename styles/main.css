@@ -1,0 +1,72 @@
+.main-content{
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "gourmet gourmet carhartt" "gourmet gourmet adidas" "deep palace tech";
+    grid-template-rows: 350px 350px 550px;
+    gap: 50px;
+}
+.gourmet{
+    grid-area: gourmet;
+}
+.carhartt{
+    grid-area: carhartt;
+}
+.adidas{
+    grid-area: adidas;
+    width: 440px;
+}
+.deep{
+    grid-area: deep;
+    width: 480px;
+}
+.palace{
+    grid-area: palace;
+    width: 480px;
+}
+.tech{
+    grid-area: tech;
+}
+.main-item{
+    position: relative;
+}
+.main-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.main-item img:hover{
+    transform: scale(1.05);
+}
+.main-text{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}
+.main-text h2 a{
+    color: white;
+    text-transform: uppercase;
+    font-family: prolight;
+    letter-spacing: 10px;
+    font-weight: 400;
+    font-size: 40px;
+    transition: all 0.2s;
+}
+.main-text h2 a:hover{
+    color: rgb(255, 71, 71); 
+}
+.main-text h2{
+    transition: all 0.3s;
+}
+.main-text h2:hover{
+    transform: scale(1.07);
+}
+.main-text img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.crh-logo img{
+    width: 90px;
+}
