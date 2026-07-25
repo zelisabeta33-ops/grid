@@ -1,26 +1,36 @@
 .instagram{
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 .instagram-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     width: 100%;
 }
-.instagram-item{
-    position: relative;
+.insta-track-wrapper{
     width: 100%;
+    overflow: hidden;
+}
+.insta-track{
+    display: flex;
+    width: max-content;
+    will-change: transform;
+}
+.instagram-item{
+    width: 12,5%;
+    position: relative;
+    flex-shrink: 0;
 }
 .instagram-item img{
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
+    display: block;
 }
 .instagram-overlay{
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 2;
-    text-align: center;
     height: 100%;
     width: 100%;
     display: flex;
@@ -38,9 +48,11 @@
     font-size: 70px;
     transition: all 0.3s;
     cursor: pointer;
+    filter: grayscale(60%) opacity(0.7);
 }
-.instagram-overlay h2:hover{
-    transform: scale(1.05);
+.instagram:hover .instagram-overlay h2{
+    transform: scale(1.03);
+    filter: grayscale(0) opacity(1);
 }
 .instagram-overlay a{
     text-transform: uppercase;
@@ -52,6 +64,31 @@
     margin-bottom: 80px;
     transition: all 0.3s;
 }
-.instagram-overlay a:hover{
-    transform: scale(1.05);
+.instagram:hover .instagram-overlay a{
+    transform: scale(1.05) translateY(-5px);
+}
+.left{
+    animation: scrollleft 25s linear infinite;
+}
+.right{
+    animation: scrollright 25s linear infinite;
+}
+@keyframes scrollleft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes scrollright {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.instagram:hover .insta-track{
+    animation-play-state: paused;
 }
