@@ -1,0 +1,57 @@
+.instagram{
+    position: relative;
+    width: 100%;
+}
+.instagram-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+.instagram-item{
+    position: relative;
+    width: 100%;
+}
+.instagram-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.instagram-overlay{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 27, 27, 0.7);
+}
+.instagram-overlay h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: prolight;
+    letter-spacing: 30px;
+    font-weight: 400;
+    font-size: 70px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.instagram-overlay h2:hover{
+    transform: scale(1.05);
+}
+.instagram-overlay a{
+    text-transform: uppercase;
+    color: rgb(255, 71, 71);
+    letter-spacing: 15px;
+    font-family: probold;
+    font-size: 30px;
+    margin-top: -15px;
+    margin-bottom: 80px;
+    transition: all 0.3s;
+}
+.instagram-overlay a:hover{
+    transform: scale(1.05);
+}

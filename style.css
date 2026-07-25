@@ -1,7 +1,11 @@
 @import url(./styles/head.css);
 @import url(./styles/font.css);
 @import url(./styles/main.css);
+@import url(./styles/instagram.css);
 
+html{
+    scroll-behavior: smooth;
+}
 .container-fluid{
     width: 100%;
 }
@@ -12,4 +16,7 @@
 }
 a{
     text-decoration: none;
+}
+main{
+    scroll-margin-top: 20px;
 }

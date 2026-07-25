@@ -58,6 +58,10 @@ header{
     font-family: probold;
     font-size: 30px;
 }
-.head-name img{
+.head-arrow img{
     margin-top: 280px;
+    transition: all 0.3s;
+}
+.head-arrow img:hover{
+    transform: scale(1.1);
 }
