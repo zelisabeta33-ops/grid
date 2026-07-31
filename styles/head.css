@@ -1,6 +1,6 @@
 header{
     background-image: url(../img/banner.png);
-    height: 1000px;
+    min-height: 1000px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -80,5 +80,12 @@ header{
     }
     100%{
         transform: translateY(5px);
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 424px){
+    header{
+        min-height: 100hv;
+        background-size: cover;
     }
 }
