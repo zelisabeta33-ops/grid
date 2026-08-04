@@ -75,3 +75,15 @@
     font-size: 60px;
     letter-spacing: 20px;
 }
+
+@media screen and (max-width: 768px) and (min-width: 424px) and (orientation: vertical){
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .gourmet, .carhartt, .adidas, .deep, .palace, .tech{
+        width: 450px;
+        max-width: 100%;
+    }
+}
